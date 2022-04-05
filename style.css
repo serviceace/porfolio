@@ -4,16 +4,105 @@
 	box-sizing:  border-box;
 	font-family: 'Poppins', sans-serif;
 }
+
+/* HEADER */
 .header{
+	display: flex;
+	align-items: stretch;
 	width: 100%;
-	height: 70px;
+	height: 50px;
 	background: #141414;
+	color: white;
+	line-height: ;
 }
 .container{
 	width: 100%;
 	max-width: 1000px;
 	margin: auto;
 }
+.menusito{
+	text-align: left;
+	flex-grow: 1;
+	margin-left: 20px;
+}
+.icon__menu{
+	cursor: pointer;
+	font-size: 25px;
+	margin: 10px;
+}
+.blank{
+	flex-grow: 5;
+}
+.nombre__header {
+	flex-grow: 1;
+	text-align: right;
+	line-height: 50px;
+	margin-right: 20px;
+}
+/* HEADER */
+
+
+
+
+/* Lateral Menu*/
+#boton__menu{
+	display: none;
+}
+.container-menu{
+	position: absolute;
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+#boton__menu:checked ~ .container-menu{
+	opacity: 1;
+	visibility: visible;
+}
+.cont-menu{
+	width: 100%;
+	max-width: 250px;
+	background: #141414;
+	height: 100vh;
+	position: relative;
+	transition: all 500ms ease;
+	transform: translateX(-100%);
+}
+#boton__menu:checked ~ .container-menu .cont-menu{
+	transform: translateX(0%);
+}
+.cont-menu nav{
+	transform: translateY(15%);
+}
+.cont-menu nav a{
+	text-align: right;
+	display: block;
+	text-decoration:none;
+	padding: 10px 10px;
+	margin-right: 15px;
+	color: #c7c7c7 ;
+	border-right: 5px solid transparent;
+	transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+	border-right: 5px solid #c7c7c7;
+	background: #1f1f1f;
+}
+.cont-menu label{
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	color: #FFF;
+	cursor: pointer;
+	font-size: 18px;
+}
+/* Lateral Menu*/
+
+/* ID CARD */
 .avatar img {
 	width: 80px;
 	margin-top: 40px;
@@ -37,92 +126,24 @@
 	margin-bottom: 0px;
 	font-weight: 150;
 }
-.bar{
-	line-height: 70px;
-	position: relative;
+/* ID CARD */
+
+
+/* Iconos redes */
+.redes{
+	color: lightgray;
+	margin-top: 170px;
+	margin-left: 35px;
 }
-.bar p {
+a {
 	display: inline-block;
-	text-decoration: none;
-	color: #FFF;
-	padding: 25px 15px;
-	line-height: normal;
-	transition: all 800ms ease;
-}
-
-.btn__menu label{
-	cursor: pointer;
-	color: #FFF;
-	font-size: 30px;
-}
-.icon__menu{
-	font-size: 25px;
-	margin: 10px;
-}
-
-/* Lateral Menu*/
-#btn__menu{
-	display: none;
-}
-.container__menu{
-	position: absolute;
-	background: rgba(0, 0, 0, 0.5);
-	width: 100%;
-	height: 100vh;
-	top: 0;
-	left: 0;
-	transition: all 500ms ease;
-	opacity: 0;
-	visibility: hidden;
-}
-#btn__menu:checked ~ .container__menu{
-	opacity: 1;
-	visibility: visible;
-}
-
-.cont__menu{
-	width: 100%;
-	max-width: 250px;
-	background: #1c1c1c;
-	height: 100vh;
-	position: relative;
-	transition: all 500ms ease;
-	transform: translateX(-100%);
-
-}
-#btn__menu:checked ~ .container__menu .cont__menu{
-	transform: translateX(0px);
-}
-
-.cont__menu nav{
-	transform: translateY(15%);
-}
-.cont__menu nav a{
-	text-align: right;
-	display: block;
-	text-decoration:none;
-	padding: 10px 10px;
-	margin-right: 15px;
-	color: #c7c7c7 ;
-	border-right: 5px solid transparent;
-	transition: all 400ms ease;
-
-}
-.cont__menu nav a:hover{
-	border-right: 5px solid #c7c7c7;
-	background: #1f1f1f;
-}
-.cont__menu label{
-	position: absolute;
-	right: 5px;
-	top: 10px;
-	color: #FFF;
-	cursor: pointer;
-	font-size: 18px;
 }
 .iconito{
 	padding-left: 10px;
 }
+/* Iconos redes */
+
+
 
 footer{
 	background: lightgray;
@@ -130,12 +151,4 @@ footer{
 	height: 100%;
 }
 
-/* redes */
-.redes{
-	color: lightgray;
-	margin-top: 200px;
-	margin-left: 35px;
-}
-a {
-	display: inline-block;
-}
+
