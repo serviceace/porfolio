@@ -142,6 +142,94 @@ a {
 /* Iconos redes */
 
 
+
+
+/**** Secciones ****/
+
+/* ONE */
+.seccion__one{
+	background-image: url(./images/banner.jpg); 
+	color: white;
+	display: flex;
+	flex-direction: column;
+}
+.titulo__intro{
+	margin-top: 100px;
+	margin-right: 300px;
+	margin-left: 300px;
+	font-size: 2em;
+	text-align: center;
+	font-weight: 200;
+}
+.parrafo__intro{
+	font-size: 1.5em;
+	text-align: center;
+	margin-right: 300px;
+	margin-left: 300px;
+	margin-top: 75px;
+	font-weight: 100;
+}
+.boton__AboutMe{
+	width: 200px;
+	margin-top: 50px;
+	margin-bottom: 75px;
+	padding: 0.75em 2.5em 0.75em 2.5em;
+	font-size: 20px;
+	border-radius: 5px;
+	background-color: #8ebebc;
+	color: white;
+	align-self: center;
+	border: 0;
+	font-weight: 200;
+}
+/* ONE */
+
+
+
+/* TWO */
+.seccion__dos{
+	display: flex;
+	flex-direction: column;
+}
+.titulo__proyectos{
+	text-align: center;
+	font-size: 2em;
+	font-weight: 200;
+	margin-top: 75px;
+	margin-bottom: 30px;
+}
+.parrafo__proyectos{
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 200;
+	margin: 30px 100px 50px 100px ;
+}
+
+
+/* TWO */
+
+
+
+
+
+
+
+
+
+
+
+
+.two{
+	background: red;
+}
+.three{
+	background: green;
+}
+.four{
+	background: yellow;
+}
+
+
 /* Footer */
 footer{
 	background: lightgray;
