@@ -146,7 +146,7 @@ a {
 
 /**** Secciones ****/
 
-/* ONE */
+/* UNO */
 .seccion__one{
 	background-image: url(./images/banner.jpg); 
 	color: white;
@@ -182,11 +182,11 @@ a {
 	border: 0;
 	font-weight: 200;
 }
-/* ONE */
+/* UNO */
 
 
 
-/* TWO */
+/* DOS */
 .seccion__dos{
 	display: flex;
 	flex-direction: column;
@@ -204,30 +204,95 @@ a {
 	font-weight: 200;
 	margin: 30px 100px 50px 100px ;
 }
+/* DOS */
 
-
-/* TWO */
-
-
-
-
-
-
-
-
-
-
-
-
-.two{
-	background: red;
+/* TRES */
+.seccion__tres{
+	display: flex;
+	flex-direction: column;
+	background: #e6e6e6;
 }
-.three{
-	background: green;
+.titulo__aboutMe{
+	text-align: center;
+	font-size: 2em;
+	font-weight: 200;
+	margin-top: 60px;
+	margin-bottom: 20px;
 }
-.four{
-	background: yellow;
+.imagen__banner--aboutMe{
+	align-self: center;
+	width: 700px;
+	height: 200px;
+	margin-top: 15px;
+	margin-bottom: 30px;
 }
+.parrafo__aboutMe{
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 200;
+	margin: 10px 100px 50px 100px ;
+}
+/* TRES */
+
+
+/* CUATRO */
+.seccion__cuatro{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #f7f7f7
+}
+.titulo__contacto{
+	margin: 50px 100px 20px 100px ;
+	font-size: 2em;
+	text-align: center;
+	font-weight: 200;
+}
+.parrafo__contacto{
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 200;
+	margin: 20px 100px 50px 100px ;
+}
+#formulario__nombre{
+	width: 300px;
+	height: 50px;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px ;
+}
+#formulario__email{
+	width: 300px;
+	height: 50px;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px ;
+}
+#formulario__mensaje{
+	width: 700px;
+	height: 300px;
+	border-radius: 5px;
+	text-align: start;
+}
+.boton__enviar{
+	width: 200px;
+	margin-top: 50px;
+	margin-bottom: 75px;
+	padding: 0.75em 2.5em 0.75em 2.5em;
+	font-size: 20px;
+	border-radius: 5px;
+	background-color: #8ebebc;
+	color: white;
+	align-self: center;
+	border: 0;
+	font-weight: 200;
+}
+/* CUATRO */
+
 
 
 /* Footer */
