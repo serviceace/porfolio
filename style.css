@@ -1,7 +1,6 @@
 *{
 	margin: 0;
 	padding: 0;
-	box-sizing:  border-box;
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -13,7 +12,9 @@
 	height: 50px;
 	background: #141414;
 	color: white;
-	line-height: ;
+	position: sticky;
+	top: 0;
+	
 }
 .container{
 	width: 100%;
@@ -66,12 +67,12 @@
 	max-width: 250px;
 	background: #141414;
 	height: 100vh;
-	position: relative;
+	position: sticky;
 	transition: all 500ms ease;
-	transform: translateX(-100%);
+	transform: translateY(-100%);
 }
 #boton__menu:checked ~ .container-menu .cont-menu{
-	transform: translateX(0%);
+	transform: translateY(0%);
 }
 .cont-menu nav{
 	transform: translateY(15%);
@@ -153,6 +154,10 @@ a {
 	display: flex;
 	flex-direction: column;
 }
+.seccion__intro{
+	display: flex;
+	flex-direction: column;
+}
 .titulo__intro{
 	margin-top: 100px;
 	margin-right: 300px;
@@ -175,11 +180,11 @@ a {
 	margin-bottom: 75px;
 	padding: 0.75em 2.5em 0.75em 2.5em;
 	font-size: 20px;
-	border-radius: 5px;
+	border-radius: 7px;
 	background-color: #8ebebc;
 	color: white;
-	align-self: center;
-	border: 0;
+	justify-content: center;
+	border: 1;
 	font-weight: 200;
 }
 /* UNO */
@@ -188,21 +193,90 @@ a {
 
 /* DOS */
 .seccion__dos{
+	background: #f5f0f0 ;
 	display: flex;
 	flex-direction: column;
+	
 }
 .titulo__proyectos{
 	text-align: center;
 	font-size: 2em;
 	font-weight: 200;
-	margin-top: 75px;
-	margin-bottom: 30px;
+	margin-top: 60px;
+	margin-bottom: 20px;
 }
 .parrafo__proyectos{
 	text-align: center;
 	font-size: 1.2em;
 	font-weight: 200;
 	margin: 30px 100px 50px 100px ;
+}
+.imagen__grilla{
+
+}
+.grilla__proyectos{
+	align-content: center;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-bottom: 50px;
+	grid-column-gap:20px ;
+	grid-row-gap: 0px;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas: 
+	"area1 area2"
+	"area3 area4"
+	"area5 area6"
+	"area7 area8"
+}
+.grid__coso1{
+	background: transparent;
+	align-self: center;
+	text-align: center;
+	grid-area: area1;
+}
+.grid__coso2{
+	background: transparent;
+	align-self: center;
+	text-align: center;	
+	grid-area: area2;
+}
+.grid__coso3{
+	text-align: center;
+	grid-area: area3;
+}
+.grid__coso4{
+	text-align: center;
+	grid-area: area4;
+}
+.grid__coso5{
+	background: transparent;
+	text-align: center;
+	grid-area: area5;
+}
+.grid__coso6{
+	background: transparent;
+	text-align: center;
+	grid-area: area6;
+}
+.grid__coso7{
+	text-align: center;
+	grid-area: area7;
+}
+.grid__coso8{
+	
+	text-align: center;
+	grid-area: area8;
+}
+.descripcion{
+	background: #FFF;
+	border: 2px solid black;
+	border-radius: 5px;
+	text-align: center;
+	width: auto
+	height: 40px;
+	margin-bottom: 5px;
 }
 /* DOS */
 
@@ -211,6 +285,9 @@ a {
 	display: flex;
 	flex-direction: column;
 	background: #e6e6e6;
+}
+.seccion__intro{
+	align-items: center;
 }
 .titulo__aboutMe{
 	text-align: center;
@@ -237,16 +314,14 @@ a {
 
 /* CUATRO */
 .seccion__cuatro{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background: #f7f7f7
+	background: #f7f7f7;
 }
 .titulo__contacto{
-	margin: 50px 100px 20px 100px ;
-	font-size: 2em;
 	text-align: center;
+	font-size: 2em;
 	font-weight: 200;
+	padding-top: 60px ;
+	padding-bottom: 20px;
 }
 .parrafo__contacto{
 	text-align: center;
@@ -254,42 +329,67 @@ a {
 	font-weight: 200;
 	margin: 20px 100px 50px 100px ;
 }
+.formulario{
+	margin-right: 100px;
+	margin-left: 100px;
+}
+.grilla__formulario{
+	display: grid;
+	grid-template-columns: 		auto;
+	grid-template-rows: auto auto auto;
+	grid-template-areas: 
+	"area1"
+	"area2"
+	"area3"
+}
+.grid__item1{
+	text-align: center;
+	border: 0;
+	grid-area: area1;
+}
+.grid__item2{
+	text-align: center;
+	border: 0;
+	grid-area: area2;
+}
+.grid__item3{
+	text-align: center;
+	border: 0;
+	grid-area: area3;
+}
+
 #formulario__nombre{
 	width: 300px;
 	height: 50px;
-	border-radius: 5px;
-	margin-top: 10px;
-	margin-right: 20px;
-	margin-bottom: 20px;
-	margin-left: 20px ;
+	border-radius: 7px;
 }
 #formulario__email{
 	width: 300px;
 	height: 50px;
-	border-radius: 5px;
-	margin-top: 10px;
-	margin-right: 20px;
-	margin-bottom: 20px;
-	margin-left: 20px ;
+	border-radius: 7px;
+	margin: 10px 0px 10px 20px;
 }
 #formulario__mensaje{
-	width: 700px;
-	height: 300px;
-	border-radius: 5px;
+	width: 650px;
+	height: 250px;
+	border-radius: 7px;
 	text-align: start;
+	margin: 10px 10px 10px 10px; 
+}
+textarea {
+    overflow: scroll;
+    resize: none;
 }
 .boton__enviar{
 	width: 200px;
-	margin-top: 50px;
-	margin-bottom: 75px;
 	padding: 0.75em 2.5em 0.75em 2.5em;
 	font-size: 20px;
-	border-radius: 5px;
+	border-radius: 7px;
 	background-color: #8ebebc;
 	color: white;
-	align-self: center;
-	border: 0;
+	border: 1;
 	font-weight: 200;
+	margin: 10px 10px 50px 10px; 
 }
 /* CUATRO */
 
@@ -300,6 +400,16 @@ footer{
 	background: lightgray;
 	width: 100%;
 	height: 100%;
+	
+}
+.footer{
+
+}
+.parrafo__footer{
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-weight: 200;
 }
 /* Footer */
 

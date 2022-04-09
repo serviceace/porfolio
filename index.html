@@ -15,7 +15,7 @@
         <header class="header">
             <div class="menusito"><label for="boton__menu"><i class="icon__menu fa-solid fa-bars"></i></label></div>
             <div class="blank"></div>
-            <div class="nombre__header">Robles Gustavo Developer</div>
+            <div class="nombre__header">Robles Gustavo | Web Developer</div>
         </header>
 
 <input type="checkbox" id="boton__menu">
@@ -28,10 +28,10 @@
             <p class="profesion">Frontend Developer</p>
         </div>
         <nav>
-            <a href="#">Main  <i class="iconito fa-solid fa-house"></i></a>
-            <a href="#">Proyectos  <i class="iconito fa-solid fa-table-cells"></i></a>
-            <a href="#">About Me  <i class="iconito fa-solid fa-user"></i></a>
-            <a href="#">Contacto  <i class="iconito fa-solid fa-address-card"></i></a>
+            <a class="boton__navegacion" href="#seccion1">Main  <i class="iconito fa-solid fa-house"></i></a>
+            <a class="boton__navegacion" href="#seccion3">About Me  <i class="iconito fa-solid fa-user"></i></a>
+            <a class="boton__navegacion" href="#seccion2">Proyectos  <i class="iconito fa-solid fa-table-cells"></i></a>
+            <a class="boton__navegacion" href="#seccion4">Contacto  <i class="iconito fa-solid fa-address-card"></i></a>
         </nav>
         <div>
             <a href="#" class="redes"><i class="fa-brands fa-twitter"></i></a>
@@ -39,35 +39,27 @@
             <a href="#" class="redes"><i class="fa-brands fa-linkedin"></i></a>
             <a href="#" class="redes"><i class="fa-solid fa-envelope"> </i></a>
         </div>
-        <label for="boton__menu" class="icon_equis" >✖️</label>
+        <label for="boton__menu" class="icon_equis" ><i class="fa-solid fa-x"></i></label>
     </div>
 </div>
-            <!-- Main -->
-                <div id="main">
-                    
-                    <!-- Intro -->
-                    <section class="seccion__one">
-                        <h2 class="titulo__intro">Hola! Soy un parrafo introductorio para 
-                        arrancar la primer seccion del porfolio. Nos vemos, besitos.</h2>
-                        <p class="parrafo__intro"> Ligula scelerisque justo sem accumsan diam quis
-                            vitae natoque dictum sollicitudin elementum.</p>
-                        <button class="boton__AboutMe">Sobre Mi</button>
-                    </section>
+                
 
-                    <!-- Proyects -->             
-                    <section class="seccion__dos">
-                        <h2 class="titulo__proyectos">Proyectos</h2>
-                        <p class="parrafo__proyectos">Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce hendrerit lacus ridiculus.</p>
-                        <div class="grilla__proyectos">
-                                                        
+                <!-- Main -->
+                    <section class="seccion__one" id="seccion1">
+                        <div class="seccion__intro">
+
+                            <h2 class="titulo__intro">Hola! Soy un parrafo introductorio para 
+                            arrancar la primer seccion del porfolio. Nos vemos, besitos.</h2>
+                            <p class="parrafo__intro"> Ligula scelerisque justo sem accumsan diam quis
+                                                        vitae natoque dictum sollicitudin elementum.</p>
+                            <button class="boton__AboutMe">Sobre Mi</button>
                         </div>
                     </section>
 
-
-                    <!-- About Me -->
-                    <section class="seccion__tres">
+                <!-- About Me -->
+                    <section class="seccion__tres" id="seccion3">
                         <h2 class="titulo__aboutMe">About me</h2>
-                        <img class="imagen__banner--aboutMe" src="./images/banner.jpg">
+                        <img class="imagen__banner--aboutMe" src="./images/pic08.jpg">
                         <p class="parrafo__aboutMe">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -75,22 +67,53 @@
                         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </section>
-
-
-                    <!-- Contacts -->
-                    <section class="seccion__cuatro">
-                        <h2 class="titulo__contacto">Contacto</h2>
-                        <p class="parrafo__contacto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.</p>
-                        <input type="text" id="formulario__nombre" name="Nombre" value="Nombre"><input type="email" id="formulario__email" name="Email" value="Email">                        
-                        <input type="text" id="formulario__mensaje" name="Mensaje" value="Mensaje">
-                        <button class="boton__enviar">ENVIAR</button>
+                
+                <!-- Proyects -->             
+                    <section class="seccion__dos" id="seccion2">
+                        <h2 class="titulo__proyectos">Proyectos</h2>
+                        <p class="parrafo__proyectos">Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce hendrerit lacus ridiculus.</p>
+                        
+                        <div class="grilla__proyectos">
+                            <div class="grid__coso1"><img class="imagen__grilla" src="./images/placeholder__.png"></div>
+                            <div class="grid__coso2"><img class="imagen__grilla" src="./images/placeholder__.png"></div>
+                            <div class="grid__coso3 descripcion">descripcion</div>
+                            <div class="grid__coso4 descripcion">descripcion</div>
+                            <div class="grid__coso5"><img class="imagen__grilla" src="./images/placeholder__.png"></div>
+                            <div class="grid__coso6"><img class="imagen__grilla" src="./images/placeholder__.png"></div>
+                            <div class="grid__coso7 descripcion">descripcion</div>
+                            <div class="grid__coso8 descripcion">descripcion</div>
+                        </div>                    
                     </section>
-                </div>
+
+                <!-- Contacto -->
+                    <section class="seccion__cuatro" id="seccion4">
+                        
+                            <h2 class="titulo__contacto">Contacto</h2>
+                            <p class="parrafo__contacto">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.</p>
+                            <div class="formulario">
+                                <div class="grilla__formulario">
+                                    <div class="grid__item1">
+                                        <input type="text" id="formulario__nombre" name="Nombre" value="Nombre"><input type="email" id="formulario__email" name="Email" value="Email">
+                                    </div>
+                                    <div class="grid__item2">
+                                        <textarea id="formulario__mensaje" rows="10" cols="50">Escribe algo aca</textarea>
+                                    </div>
+                                    <div class="grid__item3">
+                                        <button class="boton__enviar">ENVIAR</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </section>
+                
 
              <footer>
-                 Hecho con mucho amorcito ♥
+                 <div class="footer">
+                     <p class="parrafo__footer"> Hecho con mucho amorcito ♥ | © Untitled. All rights reserved.</p>
+                 </div>
              </footer>
     </body>
 </html>
