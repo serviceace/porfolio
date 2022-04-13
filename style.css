@@ -132,9 +132,15 @@ html{
 
 /* Iconos redes */
 .redes{
+	font-size: 23px;
 	color: lightgray;
 	margin-top: 170px;
-	margin-left: 35px;
+	margin-left: 30px;
+	
+	filter: brightness(20%);
+}
+.redes:hover{
+	filter: brightness(100%);
 }
 a {
 	display: inline-block;
