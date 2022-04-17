@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Porfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +41,7 @@
             <i class="fa-brands fa-github"></i></a>
             <a href="https://www.linkedin.com/in/roblesgustavo86/" target="_blank" rel="noopener noreferrer" class="redes">
             <i class="fa-brands fa-linkedin"></i></a>
-            <a href="roblesgustavo86@gmail.com" target="_blank" rel="noopener noreferrer" class="redes">
+            <a href="mailto:roblesgustavo86@gmail.com" class="redes">
             <i class="fa-solid fa-envelope"> </i></a>
         </div>
         <label for="boton__menu" class="icon_equis" ><i class="fa-solid fa-x"></i></label>
@@ -69,7 +70,7 @@
                         <br>
                         Particularmente elegí un camino: aprender programación yendo por el lado del web desing. Mi idea primaria es asimilar las herramientas, los modos de trabajo en grupo, los conceptos técnicos compartidos entre diferentes lenguajes y la lógica de funcionamiento en la programación.<br>
                         <br>
-                        Actualmente mis conocimientos pasan por HTML, CSS y un temprano dominio de JavaScript. También aprendí a usar herramientas como Git y SCSS y aplicar metodologías descriptivas como BEM.
+                        Actualmente mis conocimientos pasan por HTML, CSS y un temprano dominio de JavaScript. También aprendí a usar herramientas como Git y SASS y aplicar metodologías descriptivas como BEM.
                         Aspiro a convertirme en desarrollador Full Stack, por lo que me esfuerzo en aprender nuevas tecnologías constantemente las cuales agregaré a medida que las domine.</p>
                     </section>
                 
@@ -77,18 +78,53 @@
                     <section class="seccion__dos" id="seccion2">
                         <h2 class="titulo__proyectos">Proyectos</h2>
                         <p class="parrafo__proyectos">Aquí presento un par de proyectos en los que me encuentro trabajando para poder ejercitar mi manejo con los lenguajes que conozco. Algunos son simples clones de sitios web populares; pero mi idea es demostrar de lo que soy capaz. También encontrarán un par de páginas con un enfoque mas serio, las cuales constantemente estoy actualizando tanto en contenido como en código.</p>
-                        
-                        <div class="grilla__proyectos">
-                            <div class="grid__coso1"><img class="imagen__grilla" src="./images/placeholder__.png"></div>
-                            <div class="grid__coso2"><img class="imagen__grilla" src="./images/placeholder__.png"></div>
-                            <div class="grid__coso3 descripcion">descripcion</div>
-                            <div class="grid__coso4 descripcion">descripcion</div>
-                            <div class="grid__coso5"><img class="imagen__grilla" src="./images/placeholder__.png"></div>
-                            <div class="grid__coso6"><img class="imagen__grilla" src="./images/placeholder__.png"></div>
-                            <div class="grid__coso7 descripcion">descripcion</div>
-                            <div class="grid__coso8 descripcion">descripcion</div>
-                        </div>                    
-                    </section>
+
+                        <div class="container__cards">
+                            <div class="card">
+                                <figure>
+                                    <img src="./images/placeholder__.png">
+                                </figure>
+                                <div class="card__contenido">
+                                    <h3>TITULO 1</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident fugit eveniet eum quaerat ad accusamus possimus praesentium! Quia veritatis, corporis.</p>
+                                    <a href="#">Ver Más</a>
+                                </div>                              
+                            </div>
+                             <div class="card">
+                                <figure>
+                                    <img src="./images/placeholder__.png">
+                                </figure>
+                                <div class="card__contenido">
+                                    <h3>TITULO 1</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident fugit eveniet eum quaerat ad accusamus possimus praesentium! Quia veritatis, corporis.</p>
+                                    <a href="#">Ver Más</a>
+                                </div>                              
+                            </div>
+                             <div class="card">
+                                <figure>
+                                    <img src="./images/placeholder__.png">
+                                </figure>
+                                <div class="card__contenido">
+                                    <h3>TITULO 1</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident fugit eveniet eum quaerat ad accusamus possimus praesentium! Quia veritatis, corporis.</p>
+                                    <a href="#">Ver Más</a>
+                                </div>                              
+                            </div>
+                             <div class="card">
+                                <figure>
+                                    <img src="./images/placeholder__.png">
+                                </figure>
+                                <div class="card__contenido">
+                                    <h3>TITULO 1</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident fugit eveniet eum quaerat ad accusamus possimus praesentium! Quia veritatis, corporis.</p>
+                                    <a href="#">Ver Más</a>
+                                </div>                              
+                            </div>
+                            
+                        </div>
+                       
+
+                      </section>
 
                 <!-- Contacto -->
                     <section class="seccion__cuatro" id="seccion4">
@@ -96,8 +132,29 @@
                             <h2 class="titulo__contacto">Contacto</h2>
                             <p class="parrafo__contacto">Siéntase libre de hacerme llegar cualquier tipo de inquietud la cual yo pueda responder. Aquí mismo le dejo un formulario de contacto para dicho fin. 
                             También puede contactarme por las diferentes redes sociales a las cuales estoy pendiente. Dejo un enlace directo a cada una aquí debajo.</p>
+                            
                             <div class="formulario">
-                                <div class="grilla__formulario">
+                                <div class="formulario__items">
+                                    <div class="">
+                                    <input type="text" class="item__form" id="formulario__nombre" name="Nombre" value="nombre">
+                                    </div>
+                                    <div>
+                                    <input type="email" class="item__form" id="fomulario__email" name="Email" value="Email">
+                                    </div>
+                                    <div>
+                                    <textarea class="item__form" id="formulario__mensaje">Escribe algo acá</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                                
+
+
+                             
+
+
+
+
+                             <!--    <div class="grilla__formulario">
                                     <div class="grid__item1">
                                         <input type="text" id="formulario__nombre" name="Nombre" value="Nombre"><input type="email" id="formulario__email" name="Email" value="Email">
                                     </div>
@@ -107,8 +164,8 @@
                                     <div class="grid__item3">
                                         <button class="boton__enviar">ENVIAR</button>
                                     </div>
-                                </div>
-                            </div>
+                                </div> -->
+                            
 
                     </section>
                 

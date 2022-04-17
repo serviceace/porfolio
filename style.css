@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
 }
 html{
 	scroll-behavior: smooth;
@@ -9,6 +10,7 @@ html{
 
 /* HEADER */
 .header{
+	z-index: 10;
 	display: flex;
 	align-items: stretch;
 	width: 100%;
@@ -219,72 +221,56 @@ a {
 	font-weight: 200;
 	margin: 30px 100px 50px 100px ;
 }
-.imagen__grilla{
-
+.container__cards{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
-.grilla__proyectos{
-	align-content: center;
-	margin-left: 200px;
-	margin-right: 200px;
-	margin-bottom: 50px;
-	grid-column-gap:20px ;
-	grid-row-gap: 0px;
-	display: grid;
-	grid-template-columns: auto auto;
-	grid-template-rows: auto auto auto auto;
-	grid-template-areas: 
-	"area1 area2"
-	"area3 area4"
-	"area5 area6"
-	"area7 area8"
-}
-.grid__coso1{
-	background: transparent;
-	align-self: center;
-	text-align: center;
-	grid-area: area1;
-}
-.grid__coso2{
-	background: transparent;
-	align-self: center;
-	text-align: center;	
-	grid-area: area2;
-}
-.grid__coso3{
-	text-align: center;
-	grid-area: area3;
-}
-.grid__coso4{
-	text-align: center;
-	grid-area: area4;
-}
-.grid__coso5{
-	background: transparent;
-	text-align: center;
-	grid-area: area5;
-}
-.grid__coso6{
-	background: transparent;
-	text-align: center;
-	grid-area: area6;
-}
-.grid__coso7{
-	text-align: center;
-	grid-area: area7;
-}
-.grid__coso8{
-	
-	text-align: center;
-	grid-area: area8;
-}
-.descripcion{
+.card{
+	width: calc(50% / 2 - 50px);
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
 	background: #FFF;
-	border: 2px solid black;
-	border-radius: 5px;
+	cursor: default;
+	transition: all 400ms ease;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+}
+.card .card__contenido{
+	padding: 15px;
 	text-align: center;
-	width: auto
-	height: 40px;
-	margin-bottom: 5px;
+}
+.card .card__contenido p{
+	line-height: 1.5;
+	color: #6a6a6a;
+}
+.card .card__contenido h3{
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+.card .card__contenido a{
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	color: #2fb4cc;
+	border: 1px solid #2fb4cc;
+	border-radius: 4px;
+	transition: all 400ms ease;
+}
+.card .card__contenido a:hover{
+	background: #2fb4cc;
+	color: #fff
 }
 /* DOS */
 
@@ -306,7 +292,7 @@ a {
 }
 .imagen__banner--aboutMe{
 	align-self: center;
-	width: 700px;
+	width: 70% ;
 	height: 200px;
 	margin-top: 15px;
 	margin-bottom: 30px;
@@ -338,6 +324,21 @@ a {
 	margin: 20px 100px 50px 100px ;
 }
 .formulario{
+		
+}
+.formulario__items{
+	
+}
+.item__form{
+	width: 300px;
+	border-radius: 5px;
+	padding: 15px;
+}
+
+
+/*.formulario{
+	display: flex;
+	flex-wrap: wrap;
 	margin-right: 100px;
 	margin-left: 100px;
 }
@@ -398,7 +399,7 @@ textarea {
 	border: 1;
 	font-weight: 200;
 	margin: 10px 10px 50px 10px; 
-}
+}*/
 /* CUATRO */
 
 
@@ -421,3 +422,43 @@ footer{
 }
 /* Footer */
 
+
+
+
+/* Media Queris */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	*{
+		color: red;
+	}
+	
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	*{
+		color: green;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	*{
+		color: blue;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	*{
+		color: pink;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	*{
+		color: darkmagenta;
+	}
+}
