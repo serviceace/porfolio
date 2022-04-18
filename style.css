@@ -53,6 +53,7 @@ html{
 	display: none;
 }
 .container-menu{
+	z-index: 10;
 	position: fixed;
 	background: rgba(0, 0, 0, 0.5);
 	width: 100%;
@@ -230,7 +231,8 @@ a {
 	align-items: center;
 }
 .card{
-	width: calc(50% / 2 - 50px);
+	width: calc(60% / 2 - 50px);
+	min-width: 300px;
 	margin: 20px;
 	border-radius: 6px;
 	overflow: hidden;
@@ -323,20 +325,65 @@ a {
 	font-weight: 200;
 	margin: 20px 100px 50px 100px ;
 }
-.formulario{
-		
+/*.flex-container{
+	margin: 0 00px 0 00px ;
+	max-width: 700px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	background-color: DodgerBlue;
+	justify-content: center;
+}
+.flex-container > div {
+	background-color: #f1f1f1;
+	margin: 0px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+}
+.name{
+	flex-grow: 100%;
+	width: 300px;
+}
+.mail{
+	flex-grow: 100%;
+	width: 300px;		
+}
+.mensaje{
+	flex-grow: 100%;
+	width: 600px;
+
+}
+.enviar{
+	flex-grow: 0.5;
+}*/
+
+/*.formulario{
+	text-align: center;
 }
 .formulario__items{
+	display: flex;
+	
+	flex-direction: column;
 	
 }
 .item__form{
-	width: 300px;
 	border-radius: 5px;
 	padding: 15px;
 }
+.name{
+	width: 200px
+	height: 200px;
+}
+.mail{
+	width: 200px;
+}
+.mensaje{
+	width: 400px;
+}*/
 
 
-/*.formulario{
+.formulario{
 	display: flex;
 	flex-wrap: wrap;
 	margin-right: 100px;
@@ -399,7 +446,7 @@ textarea {
 	border: 1;
 	font-weight: 200;
 	margin: 10px 10px 50px 10px; 
-}*/
+}
 /* CUATRO */
 
 
