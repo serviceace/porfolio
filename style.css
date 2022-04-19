@@ -170,9 +170,7 @@ a {
 	flex-direction: column;
 }
 .titulo__intro{
-	margin-top: 100px;
-	margin-right: 300px;
-	margin-left: 300px;
+	margin: 100px 300px 0px 300px;
 	font-size: 2em;
 	text-align: center;
 	font-weight: 200;
@@ -186,17 +184,24 @@ a {
 	font-weight: 100;
 }
 .boton__AboutMe{
-	width: 200px;
-	margin-top: 50px;
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	color: white;
+	border: 1px solid #2fb4cc;
+	border-radius: 7px;
+	transition: all 400ms ease;
+	background-color: #8ebebc;
 	margin-bottom: 75px;
+	margin-top: 50px;
 	padding: 0.75em 2.5em 0.75em 2.5em;
 	font-size: 20px;
-	border-radius: 7px;
-	background-color: #8ebebc;
-	color: white;
-	justify-content: center;
-	border: 1;
 	font-weight: 200;
+}
+.boton__AboutMe:hover{
+	background: #2fb4cc;
+	color: #fff
 }
 /* UNO */
 
@@ -325,64 +330,6 @@ a {
 	font-weight: 200;
 	margin: 20px 100px 50px 100px ;
 }
-/*.flex-container{
-	margin: 0 00px 0 00px ;
-	max-width: 700px;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	background-color: DodgerBlue;
-	justify-content: center;
-}
-.flex-container > div {
-	background-color: #f1f1f1;
-	margin: 0px;
-	text-align: center;
-	line-height: 75px;
-	font-size: 30px;
-}
-.name{
-	flex-grow: 100%;
-	width: 300px;
-}
-.mail{
-	flex-grow: 100%;
-	width: 300px;		
-}
-.mensaje{
-	flex-grow: 100%;
-	width: 600px;
-
-}
-.enviar{
-	flex-grow: 0.5;
-}*/
-
-/*.formulario{
-	text-align: center;
-}
-.formulario__items{
-	display: flex;
-	
-	flex-direction: column;
-	
-}
-.item__form{
-	border-radius: 5px;
-	padding: 15px;
-}
-.name{
-	width: 200px
-	height: 200px;
-}
-.mail{
-	width: 200px;
-}
-.mensaje{
-	width: 400px;
-}*/
-
-
 .formulario{
 	display: flex;
 	flex-wrap: wrap;
@@ -437,15 +384,46 @@ textarea {
     resize: none;
 }
 .boton__enviar{
-	width: 200px;
-	padding: 0.75em 2.5em 0.75em 2.5em;
-	font-size: 20px;
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px 20px;
+	margin-top: 10px;
+	color: #2fb4cc;
+	border: 1px solid #2fb4cc;
 	border-radius: 7px;
-	background-color: #8ebebc;
-	color: white;
-	border: 1;
+	transition: all 400ms ease;
+	font-size: 20px;
 	font-weight: 200;
-	margin: 10px 10px 50px 10px; 
+}
+.boton__enviar:hover{
+	background: #2fb4cc;
+	color: #fff
+}
+.contenedor__flexible{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.correito{
+	background: #f7f7f7;
+	border: 3px solid rgba(0, 0, 0, 0.2);
+	padding: 10px;
+	text-align: center;
+	border-radius: 15px;
+	width: 475px;
+	font-size: 30px;
+	margin-bottom: 50px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 200;
+	transition: all 400ms ease;
+}
+.correito:hover{
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+	transform: translateY(-3%);
+}
+.portapapeles{
+	font-size: 50px;
+
 }
 /* CUATRO */
 
@@ -479,13 +457,68 @@ footer{
 	*{
 		color: red;
 	}
+	.titulo__intro{
+		margin: 80px 25px 50px 25px;
+	}
+	.parrafo__intro{
+		margin: 20px 25px 50px 25px ;
+	}
+	.parrafo__aboutMe{
+		margin: 10px 15px 50px 15px ;
+	}
+	.parrafo__proyectos{
+		margin: 30px 10px 50px 10px ;
+	}
+	.parrafo__contacto{
+		margin: 20px 15px 50px 15px ;
+	}
+	#formulario__nombre{
+		width: 150px;
+	}
+	#formulario__email{
+		width: 150px;
+	}
+	#formulario__mensaje{
+		width: 300px;
+	}
+	.correito{
+		width: 300px;
+		font-size: 15px;
+	}
+	.portapapeles{
+		font-size: 35px;
+	}
 	
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 	*{
-		color: green;
+		color: lightgreen;
+	}
+	.titulo__intro{
+		margin: 80px 50px 50px 50px;
+	}
+	.parrafo__intro{
+		margin: 20px 25px 50px 25px ;
+	}
+	.parrafo__aboutMe{
+		margin: 10px 15px 50px 15px ;
+	}
+	.parrafo__proyectos{
+		margin: 30px 15px 50px 15px ;
+	}
+	.parrafo__contacto{
+		margin: 20px 25px 50px 25px ;
+	}
+	#formulario__nombre{
+		width: 200px;
+	}
+	#formulario__email{
+		width: 200px;
+	}
+	#formulario__mensaje{
+		width: 450px;
 	}
 }
 
@@ -494,12 +527,42 @@ footer{
 	*{
 		color: blue;
 	}
+	.titulo__intro{
+		margin: 80px 100px 50px 100px;
+	}
+	.parrafo__intro{
+		margin: 30px 50px 50px 50px ;
+	}
+	.parrafo__aboutMe{
+		margin: 10px 25px 50px 25px ;
+	}
+	.parrafo__proyectos{
+		margin: 30px 20px 50px 20px ;
+	}
+	.parrafo__contacto{
+		margin: 20px 50px 50px 50px ;
+	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 	*{
-		color: pink;
+		color: tomato;
+	}
+	.titulo__intro{
+		margin: 80px 200px 80px 200px;
+	}
+	.parrafo__intro{
+		margin: 40px 50px 50px 50px ;
+	}
+	.parrafo__aboutMe{
+		margin: 10px 50px 50px 50px ;
+	}
+	.parrafo__proyectos{
+		margin: 30px 40px 50px 40px ;
+	}
+	.parrafo__contacto{
+		margin: 20px 80px 50px 80px ;
 	}
 }
 
