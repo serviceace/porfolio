@@ -160,7 +160,7 @@ a {
 
 /* UNO */
 .seccion__one{
-	background-image: url(./images/banner.jpg); 
+	background-image: url(./images/fondo_patron.png); 
 	color: white;
 	display: flex;
 	flex-direction: column;
@@ -170,7 +170,7 @@ a {
 	flex-direction: column;
 }
 .titulo__intro{
-	margin: 100px 300px 0px 300px;
+	margin: 0px;
 	font-size: 2em;
 	text-align: center;
 	font-weight: 200;
@@ -454,11 +454,9 @@ footer{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-	*{
-		color: red;
-	}
+	
 	.titulo__intro{
-		margin: 80px 25px 50px 25px;
+		margin: 50px 25px 50px 25px;
 	}
 	.parrafo__intro{
 		margin: 20px 25px 50px 25px ;
@@ -493,9 +491,7 @@ footer{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-	*{
-		color: lightgreen;
-	}
+	
 	.titulo__intro{
 		margin: 80px 50px 50px 50px;
 	}
@@ -524,9 +520,7 @@ footer{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-	*{
-		color: blue;
-	}
+	
 	.titulo__intro{
 		margin: 80px 100px 50px 100px;
 	}
@@ -546,9 +540,7 @@ footer{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-	*{
-		color: tomato;
-	}
+	
 	.titulo__intro{
 		margin: 80px 200px 80px 200px;
 	}
@@ -568,7 +560,5 @@ footer{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-	*{
-		color: darkmagenta;
-	}
+	
 }
