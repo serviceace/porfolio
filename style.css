@@ -139,7 +139,6 @@ html{
 	color: lightgray;
 	margin-top: 170px;
 	margin-left: 30px;
-	
 	filter: brightness(20%);
 }
 .redes:hover{
@@ -330,79 +329,30 @@ a {
 	font-weight: 200;
 	margin: 20px 100px 50px 100px ;
 }
-.formulario{
+.flex__redesSociales{
 	display: flex;
 	flex-wrap: wrap;
-	margin-right: 100px;
-	margin-left: 100px;
-}
-.grilla__formulario{
-	display: grid;
-	grid-template-columns: 		auto;
-	grid-template-rows: auto auto auto;
-	grid-template-areas: 
-	"area1"
-	"area2"
-	"area3"
-}
-.grid__item1{
-	text-align: center;
-	border: 0;
-	grid-area: area1;
-}
-.grid__item2{
-	text-align: center;
-	border: 0;
-	grid-area: area2;
-}
-.grid__item3{
-	text-align: center;
-	border: 0;
-	grid-area: area3;
-}
-
-#formulario__nombre{
-	width: 300px;
-	height: 50px;
-	border-radius: 7px;
-}
-#formulario__email{
-	width: 300px;
-	height: 50px;
-	border-radius: 7px;
-	margin: 10px 0px 10px 20px;
-}
-#formulario__mensaje{
-	width: 650px;
-	height: 250px;
-	border-radius: 7px;
-	text-align: start;
-	margin: 10px 10px 10px 10px; 
-}
-textarea {
-    overflow: scroll;
-    resize: none;
-}
-.boton__enviar{
+	font-size: 100px;
+	justify-content: center;
 	text-decoration: none;
-	display: inline-block;
-	padding: 10px 20px;
-	margin-top: 10px;
-	color: #2fb4cc;
-	border: 1px solid #2fb4cc;
-	border-radius: 7px;
-	transition: all 400ms ease;
-	font-size: 20px;
-	font-weight: 200;
 }
-.boton__enviar:hover{
-	background: #2fb4cc;
-	color: #fff
+.A{
+	margin: 50px;
+}
+.twitter{
+	color: #2dabeb;
+}
+.github{
+	color: #8d6aab;
+}
+.linkedin{
+	color: #1552d6;
 }
 .contenedor__flexible{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	align-items: center;
 }
 .correito{
 	background: #f7f7f7;
@@ -423,7 +373,9 @@ textarea {
 }
 .portapapeles{
 	font-size: 50px;
-
+}
+.portapelitos{
+	margin-bottom: 60px;
 }
 /* CUATRO */
 
