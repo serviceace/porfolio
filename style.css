@@ -160,7 +160,6 @@ a {
 /* UNO */
 .background{
 	background: linear-gradient(rgba(230, 230, 230, 0.1), rgba(230, 230, 230, 1.0)), url(./images/fondo_patron02.png) ;
-	/* url(./images/fondo_patron02.png); */
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
