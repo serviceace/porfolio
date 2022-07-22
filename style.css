@@ -201,16 +201,28 @@ a {
 }
 .flex__tecnologias{
 	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: center;
-	text-align: center;
 }
-.flex__tecnologias ul li{
+.tecnologias_iconos{
+	margin: 10px;
+	width: 100px;
+	height: auto;
+}
+.javascript_logo {
+	border-radius: 15px;
+}
+.bootstraps_logo {
+	width:120px;
+}
+/* .flex__tecnologias ul li{
 	display: inline-block;
 	padding: 10px;
 	font-size: 80px;
 	margin: 5px;
-}
-.flex__tecnologias ul li:first-child{
+} */
+/* .flex__tecnologias ul li:first-child{
 	color: #fc5603 ;
 }
 .flex__tecnologias ul li:nth-of-type(2){
@@ -222,7 +234,7 @@ a {
 .flex__tecnologias ul li:nth-of-type(4){
 	color: #fc352b ;
 	margin-left: -15px;
-}
+} */
 /* UNO */
 
 
