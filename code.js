@@ -1,20 +1,18 @@
-window.onscroll = function() {myFunction()};
+console.log("todo conectado");
 
-let navbar = document.getElementById("navbar");
+/* Boton que copia el email al portapapeles */
+const btn__copiar = document.getElementById("btn__copiar");
+const miCorreo = document.getElementById("miCorreo");
 
-let sticky = navbar.offsetTop;
+btn__copiar.onclick = copiarAlclipboard;
+let correoElectronico = miCorreo.innerHTML;
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-
-const btn_copiar = document.getElementById("btn__copiar");
-
-   btn_copiar.addEventListener("click", () => {
-    console.log("se copió todo");
-   
-  })
+function copiarAlclipboard(e) {
+  navigator.clipboard.writeText(correoElectronico)
+  .then(() => {
+  console.log("Texto copiado al clipboard...")
+})
+  .catch(err => {
+  console.log("algo fallo", err);
+})
+};
