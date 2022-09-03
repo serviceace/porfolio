@@ -219,25 +219,6 @@ a {
 .bootstraps_logo {
 	width:120px;
 }
-/* .flex__tecnologias ul li{
-	display: inline-block;
-	padding: 10px;
-	font-size: 80px;
-	margin: 5px;
-} */
-/* .flex__tecnologias ul li:first-child{
-	color: #fc5603 ;
-}
-.flex__tecnologias ul li:nth-of-type(2){
-	color: #3373cc ;
-}
-.flex__tecnologias ul li:nth-of-type(3){
-	color: #d9d64c ;
-}
-.flex__tecnologias ul li:nth-of-type(4){
-	color: #fc352b ;
-	margin-left: -15px;
-} */
 /* UNO */
 
 
@@ -284,7 +265,10 @@ a {
 	align-items: center;
 }
 .card{
+  position: relative;
 	width: calc(60% / 2 - 50px);
+	height: 560px;
+  vertical-align: text-top;
 	min-width: 300px;
 	margin: 20px;
 	border-radius: 6px;
@@ -326,6 +310,11 @@ a {
 .card .card__contenido a:hover{
 	background: #2fb4cc;
 	color: #fff
+}
+.detalles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /* DOS */
 
