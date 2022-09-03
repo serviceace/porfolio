@@ -265,10 +265,10 @@ a {
 	align-items: center;
 }
 .card{
-  position: relative;
+  	position: relative;
 	width: calc(60% / 2 - 50px);
-	height: 560px;
-  vertical-align: text-top;
+	height: 600px;
+  	vertical-align: text-top;
 	min-width: 300px;
 	margin: 20px;
 	border-radius: 6px;
@@ -427,9 +427,32 @@ a {
 }
 .portapapeles{
 	font-size: 50px;
+	
 }
 .portapelitos{
 	margin-bottom: 60px;
+	transition: all 200ms ease;
+}
+.portapelitos:hover {
+	animation: sacudida 2.00s;
+	animation-iteration-count: infinite;
+}
+@keyframes sacudida {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(45deg);
+	}
+	50% {
+		transform: rotate(-45deg);
+	}
+	75% {
+		transform: rotate(45deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
 }
 /* CUATRO */
 
