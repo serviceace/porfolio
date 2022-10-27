@@ -165,7 +165,6 @@ a {
 	background-size: cover;
 	background-blend-mode:lighten;
 }
-
 .seccion__one{
 	color: white;
 	display: flex;
@@ -218,6 +217,9 @@ a {
 }
 .bootstraps_logo {
 	width:120px;
+}
+.react_logo {
+	width: 120px ;
 }
 /* UNO */
 
@@ -312,6 +314,7 @@ a {
 	color: #fff
 }
 .detalles {
+	background-color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -373,14 +376,15 @@ a {
 	text-align: center;
 	font-size: 2em;
 	font-weight: 200;
-	padding-top: 60px ;
-	padding-bottom: 20px;
+	padding: 20px;
+	
 }
 .parrafo__contacto{
 	text-align: center;
 	font-size: 1.2em;
 	font-weight: 200;
-	margin: 20px 100px 50px 100px ;
+	
+
 }
 .flex__redesSociales{
 	display: flex;
@@ -391,7 +395,7 @@ a {
 	
 }
 .margen__redes{
-	margin: 50px;
+	margin: 10px;
 }
 .twitter{
 	color: #2dabeb;
@@ -426,32 +430,36 @@ a {
 	transform: translateY(-3%);
 }
 .portapapeles{
-	font-size: 50px;
+	font-size: 80px;
+	text-align: center;
+	margin-bottom: 20px;
+	transition: all 200ms ease;
+	position: relative;
 	
 }
 .portapelitos{
 	margin-bottom: 60px;
 	transition: all 200ms ease;
 }
-.portapelitos:hover {
-	animation: sacudida 2.00s;
+.portapapeles:hover {
+	animation: sacudida 0.30s;
 	animation-iteration-count: infinite;
 }
 @keyframes sacudida {
 	0% {
-		transform: rotate(0deg);
+		left: 5px; top: 0px;
 	}
 	25% {
-		transform: rotate(45deg);
+		left: 0px; top: 0px;
 	}
 	50% {
-		transform: rotate(-45deg);
+		left: -5px; top: 0px;
 	}
 	75% {
-		transform: rotate(45deg);
+		left: 0px; top: 0px;
 	}
 	100% {
-		transform: rotate(0deg);
+		left: 5px; top: 0px;
 	}
 }
 /* CUATRO */
@@ -488,7 +496,7 @@ footer{
 		margin: 20px 25px 50px 25px ;
 	}
 	.titulo__intro{
-	font-size: 3em;
+		font-size: 3em;
 	}
 	.flex__tecnologias ul li{
 		font-size: 50px;
@@ -500,17 +508,18 @@ footer{
 		margin: 30px 10px 50px 10px ;
 	}
 	.parrafo__contacto{
-		margin: 20px 15px 50px 15px ;
+		margin: 10px ;
 	}
 	.margen__redes{
-		margin: 20px;
+		margin: 5px;
 	}
 	.correito{
 		width: 300px;
-		font-size: 15px;
+		font-size: 18px;
 	}
 	.portapapeles{
 		font-size: 35px;
+		margin-bottom: 0px;
 	}
 	
 }
@@ -528,11 +537,9 @@ footer{
 		margin: 10px 15px 50px 15px ;
 	}
 	.parrafo__proyectos{
-		margin: 30px 15px 50px 15px ;
+		margin: 20px ;
 	}
-	.parrafo__contacto{
-		margin: 20px 25px 50px 25px ;
-	}
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -550,9 +557,7 @@ footer{
 	.parrafo__proyectos{
 		margin: 30px 20px 50px 20px ;
 	}
-	.parrafo__contacto{
-		margin: 20px 50px 50px 50px ;
-	}
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -570,9 +575,7 @@ footer{
 	.parrafo__proyectos{
 		margin: 30px 40px 50px 40px ;
 	}
-	.parrafo__contacto{
-		margin: 20px 80px 50px 80px ;
-	}
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

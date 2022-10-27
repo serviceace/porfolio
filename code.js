@@ -1,4 +1,3 @@
-console.log("todo conectado");
 
 /* Boton que copia el email al portapapeles */
 const btn__copiar = document.getElementById("btn__copiar");
@@ -10,7 +9,7 @@ let correoElectronico = miCorreo.innerHTML;
 function copiarAlclipboard(e) {
   navigator.clipboard.writeText(correoElectronico)
   .then(() => {
-  console.log("Texto copiado al clipboard...")
+      alert('Correo electrónico copiado al portapapeles.')
 })
   .catch(err => {
   console.log("algo fallo", err);
