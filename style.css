@@ -270,7 +270,7 @@ a {
   	position: relative;
 	width: calc(60% / 2 - 50px);
 	height: 600px;
-  	vertical-align: text-top;
+  	/* vertical-align: text-top; */
 	min-width: 300px;
 	margin: 20px;
 	border-radius: 6px;
@@ -314,10 +314,8 @@ a {
 	color: #fff
 }
 .detalles {
-	background-color: red;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	
+	vertical-align: text-bottom;
 }
 /* DOS */
 
