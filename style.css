@@ -8,6 +8,18 @@ html{
 	scroll-behavior: smooth;
 }
 
+/* ESTILOS SCROLLBAR VERTICAL */
+::-webkit-scrollbar {
+    width: 6px; 
+}
+::-webkit-scrollbar-thumb {
+    background-color: #141414; 
+    border-radius: 0px; 
+}
+::-webkit-scrollbar-track {
+    background-color: gray; 
+}
+
 /* HEADER */
 .header{
 	z-index: 10;
@@ -61,13 +73,10 @@ html{
 	top: 0;
 	left: 0;
 	transition: all 500ms ease;
-	opacity: 0;
+	opacity: 1;
 	visibility: hidden;
 }
-#boton__menu:checked ~ .container-menu{
-	opacity: 1;
-	visibility: visible;
-}
+
 .cont-menu{
 	width: 100%;
 	max-width: 250px;
@@ -76,9 +85,7 @@ html{
 	transition: all 500ms ease;
 	transform: translateX(-100%);
 }
-#boton__menu:checked ~ .container-menu .cont-menu{
-	transform: translateX(0%);
-}
+
 .cont-menu nav{
 	transform: translateX(15%);
 }
@@ -131,27 +138,6 @@ html{
 	font-weight: 150;
 }
 /* ID CARD */
-
-
-/* Iconos redes */
-.redes{
-	font-size: 23px;
-	color: lightgray;
-	margin-top: 170px;
-	margin-left: 45px;
-	filter: blur(0px);
-}
-.redes:hover{
-	filter: blur(2px);
-}
-a {
-	display: inline-block;
-}
-.iconito{
-	padding-left: 10px;
-}
-/* Iconos redes */
-
 
 
 
@@ -211,6 +197,12 @@ a {
 	margin: 10px;
 	width: 100px;
 	height: auto;
+}
+.blancoynegro {
+	filter: grayscale(100%);
+}
+.tecnologias_iconos.blancoynegro:hover {
+	filter: grayscale(0%);
 }
 .javascript_logo {
 	border-radius: 15px;
@@ -419,9 +411,11 @@ a {
 	width: 475px;
 	font-size: 30px;
 	margin-bottom: 50px;
+	margin-right: 5px;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 200;
 	transition: all 400ms ease;
+	cursor: pointer;
 }
 .correito:hover{
 	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
@@ -433,6 +427,7 @@ a {
 	margin-bottom: 20px;
 	transition: all 200ms ease;
 	position: relative;
+	cursor: pointer;
 	
 }
 .portapelitos{
