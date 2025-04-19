@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Porfolio Iky</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
+
+    <!-- Barra de Navegación -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -45,15 +48,13 @@
       </div>
     </nav>
 
-    <aside>
-      Menu
-    </aside>
 
+    <!-- Portada Principal -->
     <section>
       <h1>Frontend Developer</h1>
       <h2>Gustavo Iky Robles</h2>
       <p>Maquetador web, aspirante a Full Stack developer y futuro programador de profesión.</p>
-      <ul>
+      <ul class="tecnologias_iconos">
         <li>🧱</li>
         <li>🎨</li>
         <li>⚙️</li>
@@ -62,14 +63,16 @@
       </ul>
     </section>
 
-    <section>
+
+    <!-- Seccion Proyecto -->
+    <section id="proyectos">
       <h2>
         Proyectos
       </h2>
       <p>
         Aquí presento un par de proyectos en los que me encuentro trabajando para poder ejercitar mi manejo con los lenguajes que conozco. Algunos son simples clones de sitios web populares; pero mi idea es demostrar de lo que soy capaz. También encontrarán un par de páginas con un enfoque mas serio, las cuales constantemente estoy actualizando tanto en contenido como en código. De todas maneras, los invito a pasar por mi cuenta en GitHub , donde encontrarán repositorios a más prácticas y ejercicios hechos por mí.
       </p>
-      <ul>
+      <ul class="proyectos_cards">
         <li>
           <div class="card" style="width: 18rem;">
             <img src="..." class="card-img-top" alt="...">
@@ -104,7 +107,8 @@
       
     </section>
 
-    <section>
+    <!-- Sección About Me -->
+    <section id="aboutMe">
       <h2>
         About Me
       </h2>
@@ -113,7 +117,7 @@
         
         Particularmente elegí un camino: aprender programación yendo por el lado del web desing. Mi idea primaria es asimilar las herramientas, los modos de trabajo en grupo, los conceptos técnicos compartidos entre diferentes lenguajes y la lógica de funcionamiento en la programación.
       </p>
-      <ul>
+      <ul class="aboutMe_hashtags">
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
@@ -133,10 +137,12 @@
       </ul>
     </section>
     
-    <section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto">
       <h2>Contactos</h2>
       <h3>¿Quieres contactarme?</h3> 
-      <ul>
+      <ul class="contactos_redes">
         <li>🇽</li>
         <li>🐙</li>
         <li>✍️</li>
@@ -151,7 +157,8 @@
       </p>
     </section>
     
-    <footer>
+    <!-- Footer -->
+    <footer class="text-center">
       <p>
         Hecho con mucho amorcito ♥ | © Robles Gustavo. All rights reserved.
       </p>

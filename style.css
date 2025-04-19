@@ -1,0 +1,34 @@
+body {
+    background-color: #38424d;
+}
+
+#aboutMe {
+    background-color: #e6e6e6;
+}
+
+#proyectos {
+    background-color: #f5f0f0;
+}
+
+#contacto {
+    background-color: #fff;
+}
+footer {
+    background-color: #d3d3d3;
+}
+
+.tecnologias_iconos {
+    display: flex
+}
+
+.proyectos_cards {
+    display: flex;
+}
+
+.aboutMe_hashtags {
+    display: flex;
+}
+
+.contactos_redes {
+    display: flex;
+}
