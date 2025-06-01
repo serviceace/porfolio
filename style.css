@@ -1,34 +1,161 @@
+/* GENERALES */
+* {
+  font-family: 'Poppins', sans-serif;
+}
+.marcador {
+  background-color: red;
+}
 body {
-    background-color: #38424d;
+  background-color: white
 }
 
-#aboutMe {
-    background-color: #e6e6e6;
+section ul li {
+  list-style-type: none;
 }
+/* SECCION NAV BAR */
+.BarraHorizontalSuperior {
+  background-color: black;
+}
+
+.navBarContainer {
+  background-color: black;
+  max-width: 275px;
+}
+.navBarAvatar {
+  width: 100px;
+  border-radius: 50px;
+}
+
+.BtnMenu {
+  padding: 10px 10px;
+	margin-right: 50px;
+	color: #c7c7c7 ;
+	border-right: 5px solid transparent;
+	transition: all 250ms ease;
+}
+
+.BtnMenu:hover{
+  border-left: 5px solid #c7c7c7;
+	background: #1f1f1f;
+}
+
+
+/* SECCION Main */
+
+.background{
+    background: linear-gradient(rgba(230, 230, 230, 0.1), rgba(245, 240, 240, 1.0)), url(./images/fondo_patron02.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode:lighten;
+    margin: 0;
+    padding: 20px;
+  }
+
+.centrar_iconos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.titulo_intro {
+  font-size: 5em;
+  text-shadow: 3px 3px black;
+}
+
+.tecnologia_img {
+  width: 100px;
+  height: auto;
+}
+
+
+/* SECCION PROYECTOS */
 
 #proyectos {
     background-color: #f5f0f0;
+    margin: 0px;
+    padding: 50px 0;
 }
 
-#contacto {
-    background-color: #fff;
-}
-footer {
-    background-color: #d3d3d3;
+#carouselCards {
+  display: none;
 }
 
-.tecnologias_iconos {
-    display: flex
-}
 
 .proyectos_cards {
     display: flex;
+    margin: 0px;
+}
+
+/* SECCION About Me */
+
+#aboutMe {
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutMe_banner {
+  width: 70%;
+  height: 150px;
+  border-radius: 30px 0 30px 0;
 }
 
 .aboutMe_hashtags {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center ;
+  margin: 0px;
+}
+
+.bg-badge-ghost {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  box-shadow: 2px 2px black;
+  margin: 10px 5px 10px 5px;
+  padding: 0.35em 0.6em;
+  font-size: 0.75rem;
+  border-radius: 0.375rem;
+}
+
+
+
+/* SECCION CONTACTO */
+
+#contacto {
+  background-color: #fff;
+}
+
+.redondeo {
+  border-radius: 50%;
+  height: 80px;
+  width: auto;
 }
 
 .contactos_redes {
-    display: flex;
+  margin-left: -32px;
+}
+
+/* SECCION FOOTER */
+
+#footer {
+  background: lightgray;
+	width: 100%;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  margin-bottom: 0;
+
+}
+
+/* REGLAS EXTRAS PARA BOOSTRAP */
+
+.text-justify {
+  text-align: justify;
 }

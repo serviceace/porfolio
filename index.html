@@ -10,156 +10,256 @@
   <body>
 
 
-    <!-- Barra de Navegación -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- Barra de Navegación  -->
+
+    <nav class="navbar navbar-dark fixed-top BarraHorizontalSuperior">
+    
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
+      <a class="navbar-brand">Robles Gustavo | Web Developer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end navBarContainer" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <div class="d-flex align-items-center flex-column">
+        <img src="./images/avatar2.jpg" class="navBarAvatar">
+        <h3 class="text-white">Robles Gustavo</h3>
+        <h6 class="text-white fw-light">Frontend Developer</h6>
+      </div>
+      
+      <div class="offcanvas-body">
+        
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link BtnMenu" aria-current="page" href="#">Main</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link BtnMenu" href="#">About Me</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link BtnMenu" href="#">Proyectos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link BtnMenu" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      
       </div>
     </nav>
 
 
     <!-- Portada Principal -->
-    <section>
-      <h1>Frontend Developer</h1>
-      <h2>Gustavo Iky Robles</h2>
-      <p>Maquetador web, aspirante a Full Stack developer y futuro programador de profesión.</p>
-      <ul class="tecnologias_iconos">
-        <li>🧱</li>
-        <li>🎨</li>
-        <li>⚙️</li>
-        <li>🌟</li>
-        <li>⚛️</li>
+    <section id="main" class="background container-fluid">
+      <h1 class="titulo_intro text-center fw-light text-white p-3">Frontend Developer</h1>
+      <h2 class="titulo_intro text-center fw-light text-white p-3">Gustavo Iky Robles</h2>
+      <p class="text-center fw-semibold fs-4 p-4">Maquetador web, aspirante a Full Stack developer y futuro programador de profesión.</p>
+      <ul id="tecnologias_badges" class="text-center container-fluid centrar_iconos">
+        <li>
+          <img class="tecnologia_img" src="./images/html_logo.png" alt="HTML5">
+        </li>
+        <li>
+          <img class="tecnologia_img" src="./images/css_logo.png" alt="CSS3">
+        </li>
+        <li>
+          <img class="tecnologia_img" src="./images/javascript_logo.png" alt="JavaScritp">
+        </li>
+        <li>
+          <img class="tecnologia_img" src="./images/git_logo.png" alt="Git">
+        </li>
+        <li>
+          <img class="tecnologia_img" src="./images/Bootstrap_logo.png" alt="Bootstrap">
+        </li>
+        <li>
+          <img class="tecnologia_img" src="./images/react_logo.png" alt="React">
+        </li>
       </ul>
     </section>
 
 
     <!-- Seccion Proyecto -->
-    <section id="proyectos">
-      <h2>
+    <section id="proyectos" class="container-fluid pt-5">
+      <h2 class="text-center mb-3">
         Proyectos
       </h2>
-      <p>
+      <p class="text-center mt-4 mb-5 m-3">
         Aquí presento un par de proyectos en los que me encuentro trabajando para poder ejercitar mi manejo con los lenguajes que conozco. Algunos son simples clones de sitios web populares; pero mi idea es demostrar de lo que soy capaz. También encontrarán un par de páginas con un enfoque mas serio, las cuales constantemente estoy actualizando tanto en contenido como en código. De todas maneras, los invito a pasar por mi cuenta en GitHub , donde encontrarán repositorios a más prácticas y ejercicios hechos por mí.
       </p>
-      <ul class="proyectos_cards">
-        <li>
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+
+
+      <div id="carouselCards" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
             </div>
           </div>
-        </li>
-        <li>
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
             </div>
           </div>
-        </li>
-        <li>
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
             </div>
           </div>
-        </li>
-      </ul>
-      
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div id="proyectos_grilla" class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/thumb_porfolioV1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Porfolio v1</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Ver Demo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/thumb_linkbio.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Linkthree de Ramdog</h5>
+                <p class="card-text">Práctica sencilla de una landing page pequeña para agrupar redes sociales. Estilo linktree, pero personalizada. La idea primaria es hacer todo desde 0 y sin usar ningun tipo de frameworks.</p>
+                <p>Contiene:</p>
+                <a href="https://ramdog.netlify.app/" class="btn btn-primary">Ver Demo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/thumb_miluvirtual.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Milu Mascota Virtual</h5>
+                <p class="card-text">Proyecto de mascota virtual basado en la mejor perrita del mundo llamada Milu. Con este proyecto busco acercarme al desarrollo de video juegos, aunque inicio con JS basico, para luego pasarlo a React y a futuro algun framework especifico de videojuegos.</p>
+                <p>Contiene:</p>
+                <a href="https://miluvirual.netlify.app/" class="btn btn-primary">Ver Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/thumb_sermec.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Tornería Sermec</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Ver Demo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/thumb_juegolibro.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Aplicación para Juegolibro</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Ver Demo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/placeholder.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Proyecto en Progreso</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Ver Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <!-- Sección About Me -->
-    <section id="aboutMe">
-      <h2>
-        About Me
-      </h2>
-      <p>Mi nombre es Gustavo Robles; vivo en Buenos Aires, Argentina. Hace poco tiempo que se cruzó en mi vida la profesión de programación y todas sus facetas y comencé a investigar sobre la misma. De a poco entendí lo extenso que es y como poco a poco forma parte de la cotidianidad y el funcionamiento diario del mundo entero.
+    <section id="aboutMe" class="container-fluid p-3">
+      <h2 class="text-center titulo_seccion">About Me</h2>
+      <img class="aboutMe_banner m-2" src="./images/pic08.jpg">
+      <p class="text-center fw-light fs-5 mt-2 mb-5 ms-4 me-4">Mi nombre es Gustavo Robles; vivo en Buenos Aires, Argentina. Hace poco tiempo que se cruzó en mi vida la profesión de programación y todas sus facetas y comencé a investigar sobre la misma. De a poco entendí lo extenso que es y como poco a poco forma parte de la cotidianidad y el funcionamiento diario del mundo entero.
         Ahora, fascinado con lo que se puede lograr mediante la programación, intento enfocarme a aprender dicha carrera. Se que no soy el único, sé también que no será fácil. Pero me nace un gran interés por lograr cosas aplicables mediante un código escrito por mi y ver hasta donde puedo llegar.
-        
+        <br>
+        <br>
         Particularmente elegí un camino: aprender programación yendo por el lado del web desing. Mi idea primaria es asimilar las herramientas, los modos de trabajo en grupo, los conceptos técnicos compartidos entre diferentes lenguajes y la lógica de funcionamiento en la programación.
       </p>
-      <ul class="aboutMe_hashtags">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>SASS</li>
-        <li>Git</li>
-        <li>BEM</li>
-        <li>Tech Fan</li>
-        <li>Tea Lover</li>
-        <li>Cats & Dogs</li>
-        <li>Cooking</li>
-        <li>Video Games</li>
-        <li>Board Games</li>
-        <li>Anime & Manga</li>
-        <li>Books</li>
-        <li>Comics</li>
-        <li>Cience & Discovery</li>
+      <ul class="aboutMe_hashtags mb-4 m-4">
+        <li class="badge bg-light bg-badge-ghost text-dark">HTML</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">CSS</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">JavaScript</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">SASS</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">Git</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">BEM</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">Tech Fan</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">Tea Lover</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">Cats & Dogs</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">Cooking</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">Video Games</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">Board Games</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">Anime & Manga</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">Books</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">Comics</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">Cience & Discovery</li>
       </ul>
     </section>
     
 
     <!-- Sección Contacto -->
-    <section id="contacto">
-      <h2>Contactos</h2>
-      <h3>¿Quieres contactarme?</h3> 
-      <ul class="contactos_redes">
-        <li>🇽</li>
-        <li>🐙</li>
-        <li>✍️</li>
+    <section id="contacto" class="">
+      <h2 class="text-center">Contactos</h2>
+      <h5 class="text-center">¿Quieres contactarme?</h5>
+      <ul class="contactos_redes centrar_iconos">
+        <li>
+          <img class="tecnologia_img redondeo" src="./images/x_logo.png" alt="x">
+        </li>
+        <li>
+          <img class="tecnologia_img redondeo" src="./images/github_logo.png" alt="GitHub">
+        </li>
+        <li>
+          <img class="tecnologia_img redondeo" src="./images/linkedin_logo.jpg" alt="Linkedin">
+        </li>
       </ul>
+      <p class="text-center">Estoy activo en mis redes sociales y no tardaré en darte una respuestas si tienes alguna consulta para mí.</p> 
 
-      <p>
-        Si lo concideras más cómodo; aquí dejo mi correo electrónico para contactarme directamente
-      </p>
-
-      <p>
-        roblesgustavo86@gmail.com
-      </p>
     </section>
     
     <!-- Footer -->
-    <footer class="text-center">
-      <p>
+    <footer id="footer">
+      <p class="fw-light text-center">
         Hecho con mucho amorcito ♥ | © Robles Gustavo. All rights reserved.
       </p>
     </footer>
