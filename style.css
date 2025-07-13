@@ -1,7 +1,9 @@
 /* GENERALES */
 * {
   font-family: 'Poppins', sans-serif;
+  font-weight: 300;
 }
+
 .marcador {
   background-color: red;
 }
@@ -12,12 +14,37 @@ body {
 section ul li {
   list-style-type: none;
 }
+
+.seccion__title {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+/* ESTILOS SCROLLBAR VERTICAL */
+::-webkit-scrollbar {
+    width: 6px; 
+}
+::-webkit-scrollbar-thumb {
+    background-color: #141414; 
+    border-radius: 0px; 
+}
+::-webkit-scrollbar-track {
+    background-color: gray; 
+}
+
 /* SECCION NAV BAR */
 .BarraHorizontalSuperior {
   background-color: black;
 }
 
-.navBarContainer {
+.navBar__name {
+  font-size: 1rem;
+  flex-grow: 1;
+	line-height: 50px;
+  margin: 0;
+}
+
+.navBar__Container {
   background-color: black;
   max-width: 275px;
 }
@@ -58,15 +85,55 @@ section ul li {
     justify-content: space-evenly;
 }
 
-.titulo_intro {
-  font-size: 5em;
+.title__intro {
+  margin-top: 80px;
+  font-size: 3rem;
   text-shadow: 3px 3px black;
+  font-weight: 400;
+}
+
+.name__intro {
+  font-size: 4rem;
+  color: black;
+  text-shadow: 3px 3px white;
+  font-weight: 200;
+}
+
+.techNames__intro{
+  font-size: 1.5em;
+	margin-top: 40px;
+	font-weight: 500;
+	color: #1f1f1f;
+}
+
+#tecnologias_badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: auto;
+}
+
+#tecnologias_badges li {
+  margin: 0.5rem;
+}
+
+@media (max-width: 576px) {
+  #tecnologias_badges li {
+    margin: 0.1rem;
+  }
 }
 
 .tecnologia_img {
   width: 100px;
   height: auto;
 }
+.fondo_blanco {
+  background-color: #FFF;
+}
+
+
 
 
 /* SECCION PROYECTOS */
@@ -77,14 +144,64 @@ section ul li {
     padding: 50px 0;
 }
 
-#carouselCards {
-  display: none;
+.title__proyects {
+  font-size: 2rem;
+  font-weight: 200;
 }
 
+.alto_cards {
+  min-height: 500px;
+}
+
+.alto_cards_mobile {
+  min-height: 60vh;
+}
 
 .proyectos_cards {
     display: flex;
     margin: 0px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon {
+  background-color: black;
+}
+
+.carousel-control-next-icon {
+  background-color: black;
+}
+
+.githubLink {
+	text-decoration: none;
+	background-color: black;
+	padding: 2px;
+	color: #FFF;
+	border-radius: 10px;
+	box-shadow: 2px 2px grey;
+}
+.githubLink:hover{
+	background-color:#454545;
+	transform: translateY(-3%);
+	transition: all 400ms ease;
+}
+
+.efectoTarjeta{
+  position: relative;
+	border-radius: 6px;
+	overflow: hidden;
+	background: #FFF;
+	cursor: default;
+	transition: all 400ms ease;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.efectoTarjeta:hover{
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+	transform: translateY(-3%);
 }
 
 /* SECCION About Me */
@@ -102,11 +219,16 @@ section ul li {
   border-radius: 30px 0 30px 0;
 }
 
+.btn_more {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 900;
+  
+}
+
 .aboutMe_hashtags {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center ;
-  margin: 0px;
 }
 
 .bg-badge-ghost {
@@ -130,12 +252,12 @@ section ul li {
 
 .redondeo {
   border-radius: 50%;
-  height: 80px;
+  height: 120px;
   width: auto;
 }
 
 .contactos_redes {
-  margin-left: -32px;
+  gap: 1rem;
 }
 
 /* SECCION FOOTER */
@@ -158,4 +280,6 @@ footer p {
 
 .text-justify {
   text-align: justify;
+  text-justify: inter-word; 
+  word-spacing: 0.1em;
 }

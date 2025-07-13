@@ -4,22 +4,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Porfolio Iky</title>
+    <link rel="icon" href="./images/onepieceico.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
 
     <!-- Barra de Navegación  -->
-
     <nav class="navbar navbar-dark fixed-top BarraHorizontalSuperior">
     
       <div class="container-fluid">
-      <a class="navbar-brand">Robles Gustavo | Web Developer</a>
+      <a class="navbar-brand navBar__name">Robles Gustavo | Web Developer</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end navBarContainer" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas offcanvas-end navBar__Container" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
       
       <div class="offcanvas-header">
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -35,19 +39,19 @@
         
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link BtnMenu" aria-current="page" href="#">Main</a>
+            <a class="nav-link BtnMenu" aria-current="page" href="#main"><i class="bi bi-house"></i> Main</a>
           </li>
           
           <li class="nav-item">
-            <a class="nav-link BtnMenu" href="#">About Me</a>
+            <a class="nav-link BtnMenu" href="#aboutMe"><i class="bi bi-person"></i> About Me</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link BtnMenu" href="#">Proyectos</a>
+            <a class="nav-link BtnMenu" href="#proyectos"><i class="bi bi-clipboard-heart"></i> Proyectos</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link BtnMenu" href="#">Contacto</a>
+            <a class="nav-link BtnMenu" href="#contacto"><i class="bi bi-person-vcard"></i> Contacto</a>
           </li>
         </ul>
       </div>
@@ -57,10 +61,10 @@
 
 
     <!-- Portada Principal -->
-    <section id="main" class="background container-fluid">
-      <h1 class="titulo_intro text-center fw-light text-white p-3">Frontend Developer</h1>
-      <h2 class="titulo_intro text-center fw-light text-white p-3">Gustavo Iky Robles</h2>
-      <p class="text-center fw-semibold fs-4 p-4">Maquetador web, aspirante a Full Stack developer y futuro programador de profesión.</p>
+    <section id="main" class="background container-fluid p-5">
+      <h1 class="title__intro text-center text-white">Frontend Developer</h1>
+      <h2 class="name__intro text-center">Gustavo Iky Robles</h2>
+      <p class="techNames__intro text-center fs-4">Maquetador web, aspirante a Full Stack developer y futuro programador de profesión.</p>
       <ul id="tecnologias_badges" class="text-center container-fluid centrar_iconos">
         <li>
           <img class="tecnologia_img" src="./images/html_logo.png" alt="HTML5">
@@ -75,155 +79,327 @@
           <img class="tecnologia_img" src="./images/git_logo.png" alt="Git">
         </li>
         <li>
-          <img class="tecnologia_img" src="./images/Bootstrap_logo.png" alt="Bootstrap">
+          <img class="tecnologia_img mt-2" src="./images/Bootstrap_logo.png" alt="Bootstrap">
         </li>
         <li>
           <img class="tecnologia_img" src="./images/react_logo.png" alt="React">
         </li>
+        <!--
+        <li>
+          <img class="tecnologia_img" src="./images/angular_logo.png" alt="Angular">
+        </li>
+        <li>
+          <img class="tecnologia_img" src="./images/tailwind_logo.png" alt="Tailwind">
+        </li>
+        -->
+        <li>
+          <img class="tecnologia_img" src="./images/sass_logo.png" alt="Sass">
+        </li>
+        <li>
+          <img class="tecnologia_img" src="./images/python_logo.png" alt="Python">
+        </li>
+        <li>
+          <img class="tecnologia_img" src="./images/typescript_logo.webp" alt="TypeScript">
+        </li>
+        <li>
+          <img class="tecnologia_img" src="./images/wordpress_logo.png" alt="Wordpress">
+        </li>
+        <li>
+          <img class="tecnologia_img" src="./images/mysql_logo.webp" alt="MySQL">
+        </li>
+
+       <!--
+        <li>
+          <img class="tecnologia_img" src="./images/astro_logo.png" alt="Astro">
+        </li>
+        -->
       </ul>
     </section>
 
 
-    <!-- Seccion Proyecto -->
-    <section id="proyectos" class="container-fluid pt-5">
-      <h2 class="text-center mb-3">
+    <!-- Seccion Proyectos -->
+    <section id="proyectos" class="container-fluid p-5">
+
+      <p class="seccion__title text-center mb-3">
         Proyectos
-      </h2>
-      <p class="text-center mt-4 mb-5 m-3">
-        Aquí presento un par de proyectos en los que me encuentro trabajando para poder ejercitar mi manejo con los lenguajes que conozco. Algunos son simples clones de sitios web populares; pero mi idea es demostrar de lo que soy capaz. También encontrarán un par de páginas con un enfoque mas serio, las cuales constantemente estoy actualizando tanto en contenido como en código. De todas maneras, los invito a pasar por mi cuenta en GitHub , donde encontrarán repositorios a más prácticas y ejercicios hechos por mí.
+      </p>
+      <p class="intro__proyects text-justify mt-4 mb-5 m-1">
+        Aquí presento un par de proyectos en los que me encuentro trabajando para poder ejercitar 
+        mi manejo con los lenguajes que conozco. Algunos son simples clones de sitios web populares; 
+        pero mi idea es demostrar de lo que soy capaz. También encontrarán un par de páginas con un 
+        enfoque mas serio, las cuales constantemente estoy actualizando tanto en contenido como en 
+        código. De todas maneras, los invito a pasar por mi cuenta en 
+        <a class="githubLink" href="https://github.com/serviceace" target="_blank" rel="noopener noreferrer">GitHub</a>, donde 
+        encontrarán repositorios a más prácticas y ejercicios hechos por mí.
       </p>
 
 
-      <div id="carouselCards" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <div id="proyectos_grilla" class="container text-center">
-        <div class="row">
-          <div class="col">
-            <div class="card" style="width: 18rem;">
+      <!-- Carrusel Proyectos Desktop -->
+      <div id="proyectos_grilla" class="container text-center d-none d-md-block">
+        
+        <div class="row mb-3">
+          <div class="col alto_cards">
+            <div class="card h-100 efectoTarjeta" style="width: 18rem;">
               <img src="./images/thumb_porfolioV1.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Porfolio v1</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Ver Demo</a>
+              <div class="card-body d-flex flex-column">
+                <p class="card-title fs-5 fw-bold">Porfolio v1</p>
+                <p class="card-text text-justify">Primer versión de mi porfolio profesional en los inicios de mi aprendisaje. El diseño intentó ser lo mas sencillo posible pero manteniendose moderno a la vista y agregando un par de funcionalidades extra para demostrar el manejo de JavaScript.</p>
+                <div class="mt-auto">
+                  <p class="text-start"> <spam class="fw-bold">Versión:</spam> 0.9</p>
+                  <p class="text-start"> <spam class="fw-bold">Contiene:</spam> HTML - CSS - JavaScript</p>
+                  <a href="https://ikyporfoliov1.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-100">Ver Demo <i class="bi bi-play-circle"></i></a>
+                </div>
               </div>
             </div>
           </div>
+          
           <div class="col">
-            <div class="card" style="width: 18rem;">
+            <div class="card h-100 efectoTarjeta" style="width: 18rem;">
               <img src="./images/thumb_linkbio.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Linkthree de Ramdog</h5>
-                <p class="card-text">Práctica sencilla de una landing page pequeña para agrupar redes sociales. Estilo linktree, pero personalizada. La idea primaria es hacer todo desde 0 y sin usar ningun tipo de frameworks.</p>
-                <p>Contiene:</p>
-                <a href="https://ramdog.netlify.app/" class="btn btn-primary">Ver Demo</a>
+              <div class="card-body d-flex flex-column">
+                <p class="card-title fs-5 fw-bold">Linkthree de Ramdog</p>
+                <p id="descripcion" class="text-justify">Práctica sencilla de una landing page pequeña para agrupar redes sociales. Estilo linktree, pero personalizada. La idea primaria es hacer todo desde 0 y sin usar ningun tipo de frameworks.</p>
+                <div class="mt-auto">
+                  <p id="version" class="text-start"> <spam class="fw-bold">Versión:</spam> 1.0</p>
+                  <p id="contenido" class="text-start"> <spam class="fw-bold">Contiene:</spam> HTML - CSS - JavaScript</p>
+                  <a href="https://ramdog.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-100">Ver Demo <i class="bi bi-play-circle"></i></a>
+                </div>
               </div>
             </div>
           </div>
+
           <div class="col">
-            <div class="card" style="width: 18rem;">
+            <div class="card h-100 efectoTarjeta" style="width: 18rem;">
               <img src="./images/thumb_miluvirtual.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Milu Mascota Virtual</h5>
-                <p class="card-text">Proyecto de mascota virtual basado en la mejor perrita del mundo llamada Milu. Con este proyecto busco acercarme al desarrollo de video juegos, aunque inicio con JS basico, para luego pasarlo a React y a futuro algun framework especifico de videojuegos.</p>
-                <p>Contiene:</p>
-                <a href="https://miluvirual.netlify.app/" class="btn btn-primary">Ver Demo</a>
+              <div class="card-body d-flex flex-column">
+                <p class="card-title fs-5 fw-bold">Milu Mascota Virtual</p>
+                <p class="card-text text-justify">Proyecto de mascota virtual basado en la mejor perrita del mundo llamada Milu. Con este proyecto busco acercarme al desarrollo de video juegos. Aunque inicio con JS basico, luego lo pasaré a React, Angular o Python, con algun framework especifico de videojuegos.</p>
+                <div class="mt-auto">
+                  <p class="text-start"> <spam class="fw-bold">Versión:</spam> 0.3</p>
+                  <p class="text-start"> <spam class="fw-bold">Contiene:</spam> HTML - CSS - JavaScript</p>
+                  <a href="https://miluvirual.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-100">Ver Demo <i class="bi bi-play-circle"></i></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <div class="card" style="width: 18rem;">
+        
+        <div class="row mb-3">
+          <div class="col alto_cards">
+            <div class="card h-100 efectoTarjeta" style="width: 18rem;">
               <img src="./images/thumb_sermec.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Tornería Sermec</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Ver Demo</a>
+              <div class="card-body d-flex flex-column">
+                <p class="card-title fs-5 fw-bold">Tornería Sermec</p>
+                <p class="card-text text-justify">Web oficial para un taller mecánico local. Inicialmente tendría una funcion de tienda digital y sección Blog, por lo que opté en usar Wordpress para conocer mejor el framework y facilitarme el backend del cual tenia poco conocimiento. Dichas funciones luego fueron descartadas por el cliente.</p>
+                <div class="mt-auto">
+                  <p class="text-start"> <spam class="fw-bold">Versión:</spam> 1.2</p>
+                  <p class="text-start"> <spam class="fw-bold">Contiene:</spam> Wordpress</p>
+                  <a href="https://sermectorneria.com.ar/" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-100">Ver Demo <i class="bi bi-play-circle"></i></a>
+                </div>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card" style="width: 18rem;">
+            <div class="card h-100 efectoTarjeta" style="width: 18rem;">
               <img src="./images/thumb_juegolibro.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Aplicación para Juegolibro</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Ver Demo</a>
+              <div class="card-body d-flex flex-column">
+                <p class="card-title fs-6 fw-bold">Aplicación para Juegolibro</p>
+                <p class="card-text text-justify">Aplicación que me surgió programar para poder llevar el status e inventario de una serie de libros jugables llamada Fighting Fantasy. Usa sencillos elementos de formulario para llevar un registro de la aventura, pero fue una buena practica para dominar React.</p>
+                <div class="mt-auto">
+                  <p class="text-start"> <spam class="fw-bold">Versión:</spam> 0.5</p>
+                  <p class="text-start"> <spam class="fw-bold">Contiene:</spam> React</p>
+                  <a href="https://appjuegolibro.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-100">Ver Demo <i class="bi bi-play-circle"></i></a>
+                </div>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card" style="width: 18rem;">
-              <img src="./images/placeholder.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Proyecto en Progreso</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Ver Demo</a>
+            <div class="card h-100 efectoTarjeta" style="width: 18rem;">
+              <img src="./images/thumb_gatitos.png" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column">
+                <p class="card-title fs-5 fw-bold">Drum Kit de Gatitos</p>
+                <p class="card-text text-justify">Experimentación con JavaScript y sus propiedades, saliendo un poco de el diseño web y redescubriendo funciones mas amplias.</p>
+                <div class="mt-auto">
+                  <p class="text-start"> <spam class="fw-bold">Versión:</spam> 1.0</p>
+                  <p class="text-start"> <spam class="fw-bold">Contiene:</spam> JavaScript Vainilla</p>
+                  <a href="https://gatitosiky.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-100">Ver Demo <i class="bi bi-play-circle"></i></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Carrousel Poyecto Mobile -->
+
+      <div id="proyectos_carousel" class="container d-block d-md-none p-4">
+      <div id="carouselProyectos" class="carousel slide position-relative" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="card mx-auto alto_cards_mobile">
+                <img src="./images/thumb_porfolioV1.png" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title text-center fw-bold">Porfolio v1</h5>
+                  <p class="card-text text-justify">Primer versión de mi porfolio profesional en los inicios de mi aprendisaje. El diseño intentó ser lo mas sencillo posible pero manteniendose moderno a la vista y agregando un par de funcionalidades extra para demostrar el manejo de JavaScript.</p>
+                  <p class="card-text"><spam class="fw-bold">Versión:</spam> 0.9</p>
+                  <p class="card-text"><spam class="fw-bold">Contiene:</spam> HTML - CSS - JavaScript</p>
+                  <a href="https://ikyporfoliov1.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-auto">Ver Demo <i class="bi bi-play-circle"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="card mx-auto alto_cards_mobile">
+                <img src="./images/thumb_linkbio.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title text-center fw-bold">Linkthree de Ramdog</h5>
+                  <p class="card-text text-justify">Práctica sencilla de una landing page pequeña para agrupar redes sociales. Estilo linktree, pero personalizada. La idea primaria es hacer todo desde 0 y sin usar ningun tipo de frameworks.</p>
+                  <p> <spam class="fw-bold">Versión:</spam> 1.0</p>
+                  <p> <spam class="fw-bold">Contiene:</spam> HTML - CSS - JavaScript</p>
+                  <a href="https://ramdog.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-auto">Ver Demo <i class="bi bi-play-circle"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="card mx-auto alto_cards_mobile" >
+                <img src="./images/thumb_miluvirtual.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title text-center fw-bold">Milu Mascota Virtual</h5>
+                  <p class="card-text text-justify">Proyecto de mascota virtual basado en la mejor perrita del mundo llamada Milu. Con este proyecto busco acercarme al desarrollo de video juegos. Aunque inicio con JS basico, luego lo pasaré a React, Angular o Python, con algun framework especifico de videojuegos.</p>
+                  <p> <spam class="fw-bold">Versión:</spam> 0.3</p>
+                  <p> <spam class="fw-bold">Contiene:</spam> HTML - CSS - JavaScript</p>
+                  <a href="https://miluvirual.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-auto">Ver Demo <i class="bi bi-play-circle"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+              <div class="card mx-auto alto_cards_mobile">
+                <img src="./images/thumb_sermec.png" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title text-center fw-bold">Tornería Sermec</h5>
+                  <p class="card-text text-justify">Web oficial para un taller mecánico local. Inicialmente tendría una funcion de tienda digital y sección Blog, por lo que opté en usar Wordpress para conocer mejor el framework y facilitarme el backend del cual tenia poco conocimiento. Dichas funciones luego fueron descartadas por el cliente.</p>
+                  <p> <spam class="fw-bold">Versión:</spam> 1.2</p>
+                  <p> <spam class="fw-bold">Contiene:</spam> Wordpress</p>
+                  <a href="https://sermectorneria.com.ar/" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-auto">Ver Demo <i class="bi bi-play-circle"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="carousel-item">
+              <div class="card mx-auto alto_cards_mobile">
+                <img src="./images/thumb_juegolibro.png" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title text-center fw-bold">Aplicación para Juegolibro</h5>
+                  <p class="card-text text-justify">Aplicación que me surgió programar para poder llevar el status e inventario de una serie de libros jugables llamada Fighting Fantasy. Usa sencillos elementos de formulario para llevar un registro de la aventura, pero fue una buena practica para dominar React.</p>
+                  <p> <spam class="fw-bold">Versión:</spam> 0.5</p>
+                  <p> <spam class="fw-bold">Contiene:</spam> React</p>
+                  <a href="https://appjuegolibro.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-auto">Ver Demo <i class="bi bi-play-circle"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="carousel-item">
+              <div class="card mx-auto alto_cards_mobile">
+                <img src="./images/thumb_gatitos.png" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <p class="card-title fs-5 fw-bold">Drum Kit de Gatitos</p>
+                <p class="card-text text-justify">Experimentación con JavaScript y sus propiedades, saliendo un poco de el diseño web y redescubriendo funciones mas amplias.</p>
+                <div class="mt-auto">
+                  <p class="text-start"> <spam class="fw-bold">Versión:</spam> 1.0</p>
+                  <p class="text-start"> <spam class="fw-bold">Contiene:</spam> JavaScript Vainilla</p>
+                  <a href="https://gatitosiky.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-100">Ver Demo <i class="bi bi-play-circle"></i></a>
+                </div>
+                </div>
+              </div>
+          </div>
+
+        
+      </div>
+
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyectos" data-bs-slide="prev" style="left: -3rem;">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProyectos" data-bs-slide="next" style="right: -3rem;">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      
+    
+
 
     </section>
 
+
     <!-- Sección About Me -->
-    <section id="aboutMe" class="container-fluid p-3">
-      <h2 class="text-center titulo_seccion">About Me</h2>
+    <section id="aboutMe" class="container-fluid p-5">
+      <p class="text-center seccion__title">About Me</p>
       <img class="aboutMe_banner m-2" src="./images/pic08.jpg">
-      <p class="text-center fw-light fs-5 mt-2 mb-5 ms-4 me-4">Mi nombre es Gustavo Robles; vivo en Buenos Aires, Argentina. Hace poco tiempo que se cruzó en mi vida la profesión de programación y todas sus facetas y comencé a investigar sobre la misma. De a poco entendí lo extenso que es y como poco a poco forma parte de la cotidianidad y el funcionamiento diario del mundo entero.
-        Ahora, fascinado con lo que se puede lograr mediante la programación, intento enfocarme a aprender dicha carrera. Se que no soy el único, sé también que no será fácil. Pero me nace un gran interés por lograr cosas aplicables mediante un código escrito por mi y ver hasta donde puedo llegar.
+      <p class="text-justify fw-light fs-5 mt-2 mb-4 ms-3 me-3">
+        Mi nombre es Gustavo Robles y vivo en Buenos Aires, Argentina. Por azares del destino 
+        me vi atraído por el mundo de la programación y el desarrollo de software junto a todas 
+        sus facetas, lo que me llevó a investigar y aprender sobre la misma. Con el tiempo, 
+        comprendí lo extenso que es y cómo la tecnología se ha vuelto parte fundamental de la 
+        vida cotidiana y del funcionamiento del mundo moderno.
+        <span id="extra" class="d-none">
         <br>
         <br>
-        Particularmente elegí un camino: aprender programación yendo por el lado del web desing. Mi idea primaria es asimilar las herramientas, los modos de trabajo en grupo, los conceptos técnicos compartidos entre diferentes lenguajes y la lógica de funcionamiento en la programación.
+        Hoy, completamente fascinado por lo que es posible lograr a través del código, decidí 
+        enfocarme en formarme profesionalmente en esta carrera. Me motiva especialmente la 
+        posibilidad de desarrollar proyectos que pueda aplicar a la realidad, escritos por mí, 
+        y descubrir hasta dónde puedo llegar al enfrentar y resolver distintos problemas.
+        <br>
+        <br>
+        Inicialmente me acerqué a la programación por curiosidad, comenzando por el diseño web. 
+        Mi objetivo actual es asimilar las herramientas, entender los métodos de trabajo en 
+        equipo, familiarizarme con los conceptos técnicos comunes entre diferentes lenguajes y 
+        acostumbrarme a pensar con la lógica de funcionamiento que se encuentra dentro de la 
+        programación.
+        <br>
+        <br>
+        Estoy dando mis primeros pasos en este mundo, con entusiasmo y compromiso, buscando 
+        aprender más e intentar aportar valor a cada proyecto del cual se me permita formar parte.
+        <br>
+        <br>
+        <p class="fw-bold fs-5">
+          Te invito a recorrer mi porfolio y conocer algunos de los proyectos en los que estuve trabajando.
+        </p>
       </p>
-      <ul class="aboutMe_hashtags mb-4 m-4">
+      </span>
+      <a href="#" id="leerMas" class="btn_more">Leer más...</a>
+
+      <ul class="aboutMe_hashtags ps-0 ms-0 centrar_iconos">
         <li class="badge bg-light bg-badge-ghost text-dark">HTML</li>
         <li class="badge bg-light bg-badge-ghost text-dark">CSS</li>
         <li class="badge bg-light bg-badge-ghost text-dark">JavaScript</li>
         <li class="badge bg-light bg-badge-ghost text-dark">SASS</li>
         <li class="badge bg-light bg-badge-ghost text-dark">Git</li>
         <li class="badge bg-light bg-badge-ghost text-dark">BEM</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">TypeScript</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">Bootstrap</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">Tailwind</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">Aphrodite CSS</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">React</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">Angular</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">Astro</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">Wordpress</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">MySQL</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">Python</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">Frontend</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">Backend</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">SEO</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">QA</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">Postman</li>
+        <li class="badge bg-light bg-badge-ghost text-dark">Jira</li>
         <li class="badge bg-light bg-badge-ghost text-dark">Tech Fan</li>
         <li class="badge bg-light bg-badge-ghost text-dark">Tea Lover</li>
         <li class="badge bg-light bg-badge-ghost text-dark">Cats & Dogs</li>
@@ -239,32 +415,40 @@
     
 
     <!-- Sección Contacto -->
-    <section id="contacto" class="">
-      <h2 class="text-center">Contactos</h2>
-      <h5 class="text-center">¿Quieres contactarme?</h5>
-      <ul class="contactos_redes centrar_iconos">
+    <section id="contacto" class="p-5">
+      <p class="seccion__title text-center">Contacto</p>
+      <p class="text-center seccion__title fs-5">¿Te interesa contactarme?</p>
+      <ul class="contactos_redes centrar_iconos p-5">
         <li>
-          <img class="tecnologia_img redondeo" src="./images/x_logo.png" alt="x">
+          <a href="https://github.com/serviceace" target="_blank" rel="noopener noreferrer">
+            <img class="tecnologia_img redondeo" src="./images/github_logo.png" alt="GitHub">
+          </a>
         </li>
         <li>
-          <img class="tecnologia_img redondeo" src="./images/github_logo.png" alt="GitHub">
+          <a href="https://twitter.com/iky_dev" target="_blank" rel="noopener noreferrer">
+            <img class="tecnologia_img redondeo" src="./images/x_logo.png" alt="x">
+          </a>
         </li>
         <li>
-          <img class="tecnologia_img redondeo" src="./images/linkedin_logo.jpg" alt="Linkedin">
+          <a href="https://www.linkedin.com/in/roblesgustavo86/" target="_blank" rel="noopener noreferrer">
+            <img class="tecnologia_img redondeo" src="./images/linkedin_logo.jpg" alt="Linkedin">
+          </a>
         </li>
       </ul>
-      <p class="text-center">Estoy activo en mis redes sociales y no tardaré en darte una respuestas si tienes alguna consulta para mí.</p> 
+      <p class="text-center">Estoy activo en mis redes sociales y no tardaré en darte una respuesta si tienes alguna consulta para mí.</p> 
 
     </section>
     
+
     <!-- Footer -->
     <footer id="footer">
       <p class="fw-light text-center">
-        Hecho con mucho amorcito ♥ | © Robles Gustavo. All rights reserved.
+        © 2025 Robles Gustavo. Todos los derechos reservados. | Hecho con ❤️
       </p>
     </footer>
     
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
 </html>
